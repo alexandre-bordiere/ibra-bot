@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ibra-bot:
+    image: 'node:18'
+    command: sh -c "npm run build && npm start"
+    volumes:
+      - ./:/www/ibra-bot
+    working_dir: /www/ibra-bot
