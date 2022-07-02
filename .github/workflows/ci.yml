@@ -11,15 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Check types
-        run: npm run types:check
+      - run: npm ci
+      - run: npm run types:check
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Run ESLint
-        run: npm run lint
+      - run: npm ci
+      - run: npm run lint
