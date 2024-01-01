@@ -1,18 +1,16 @@
-import { Message } from 'discord.js'
+import type { Message } from 'discord.js'
 
 import { executeCommand, resolveCommand } from '../utils/commands'
 import { findOrCreatePocebloEmoji, shouldReactWithPoceBloEmoji } from '../utils/emoji'
 
 export async function onMessageCreate(message: Message) {
-  if (!message.guild) {
+  if (!message.guild)
     return
-  }
 
   const command = resolveCommand(message)
 
-  if (!command) {
+  if (!command)
     return
-  }
 
   await executeCommand(command, message)
 

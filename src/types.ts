@@ -1,4 +1,4 @@
-import { User, VoiceBasedChannel } from 'discord.js'
+import type { User, VoiceBasedChannel } from 'discord.js'
 
 export enum CommandType {
   AUDIO = 'audio',

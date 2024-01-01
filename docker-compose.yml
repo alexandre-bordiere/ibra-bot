@@ -6,4 +6,4 @@ services:
     command: sh -c "npm run build && npm start"
     volumes:
       - './:/app'
-    working_dir: '/app'
+    working_dir: /app

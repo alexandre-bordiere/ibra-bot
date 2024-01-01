@@ -1,4 +1,5 @@
-import { Command, CommandType } from './types'
+import type { Command } from './types'
+import { CommandType } from './types'
 import { playFile } from './utils/audio'
 
 export const commands: Command[] = [

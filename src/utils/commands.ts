@@ -1,12 +1,11 @@
-import { Message } from 'discord.js'
+import type { Message } from 'discord.js'
 
 import { commands } from '../constants'
-import { Command } from '../types'
+import type { Command } from '../types'
 
 export function executeCommand(command: Command, message: Message) {
-  if (!message.member?.voice.channel) {
+  if (!message.member?.voice.channel)
     return message.member?.user.send('Vous devez être dans un salon vocal pour pouvoir effectuer cette action.')
-  }
 
   return command.exec(message.member.user, message.member.voice.channel)
 }

@@ -1,4 +1,4 @@
-import * as path from 'path'
+import * as path from 'node:path'
 
 export function getAssetPath(file: string) {
   return path.join(__dirname, '..', 'assets', file)

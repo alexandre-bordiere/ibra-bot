@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
-
+import process from 'node:process'
 import { config } from 'dotenv'
 
 import { bot } from './bot'

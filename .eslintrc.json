@@ -1,8 +1,0 @@
-{
-  "root": true,
-  "extends": [
-    "@alexandre-bordiere/eslint-config/base",
-    "@alexandre-bordiere/eslint-config/typescript",
-    "@alexandre-bordiere/eslint-config/prettier"
-  ]
-}

@@ -1,5 +1,5 @@
 import { AudioPlayerStatus, createAudioPlayer, createAudioResource, joinVoiceChannel } from '@discordjs/voice'
-import { VoiceBasedChannel } from 'discord.js'
+import type { VoiceBasedChannel } from 'discord.js'
 
 import { getAssetPath, tap } from './misc'
 
@@ -11,12 +11,12 @@ export function playFile(voiceChannel: VoiceBasedChannel, file: string) {
   })
 
   return connection.subscribe(
-    tap(createAudioPlayer(), audioPlayer => {
+    tap(createAudioPlayer(), (audioPlayer) => {
       audioPlayer.play(createAudioResource(getAssetPath(`sounds/${file}`)))
 
       audioPlayer.on(AudioPlayerStatus.Idle, () => {
         connection.destroy()
       })
-    })
+    }),
   )
 }
