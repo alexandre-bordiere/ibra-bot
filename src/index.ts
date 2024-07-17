@@ -3,7 +3,7 @@ import { config } from 'dotenv'
 
 import { bot } from './bot'
 
-config()
+config({ path: '/run/secrets/env' })
 
 bot.login(process.env.TOKEN)
 

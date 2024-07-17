@@ -1,9 +1,14 @@
-version: '3'
-
 services:
   app:
-    image: 'node:20'
-    command: sh -c "npm run build && npm start"
-    volumes:
-      - './:/app'
-    working_dir: /app
+    build: .
+    secrets:
+      - env
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
+
+secrets:
+  env:
+    file: .env

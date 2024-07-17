@@ -1,0 +1,13 @@
+.git/
+.github/
+dist/
+node_modules/
+
+.dockerignore
+.env*
+.gitignore
+.kodiak.toml
+docker-compose.yml
+Dockerfile
+eslint.config.js
+README.md

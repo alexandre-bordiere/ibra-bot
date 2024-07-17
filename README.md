@@ -12,16 +12,11 @@ IbraBot is a [Discord](https://discordapp.com/) Bot centered around the [IbraTV]
 TOKEN=your-discord-token
 ```
 
-- Install the dependencies:
-
-```
-docker-compose run --rm app npm install
-```
-
 ## Usage
 
-- Run the application:
+> [!IMPORTANT]
+> Make sure to have `Docker` with the `compose` plugin installed.
 
 ```
-docker-compose up
+docker compose up --watch
 ```
