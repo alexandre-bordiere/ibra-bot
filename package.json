@@ -17,7 +17,7 @@
     "libsodium-wrappers": "^0.7.15"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.25.1",
+    "@antfu/eslint-config": "^2.25.2",
     "@types/node": "^22.3.0",
     "@types/ws": "^8.5.12",
     "typescript": "^5.4.5"
