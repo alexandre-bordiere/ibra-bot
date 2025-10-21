@@ -1,7 +1,7 @@
 import type { Message } from 'discord.js'
 
-import { commands } from '../constants'
 import type { Command } from '../types'
+import { commands } from '../constants'
 
 export function executeCommand(command: Command, message: Message) {
   if (!message.member?.voice.channel)

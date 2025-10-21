@@ -1,5 +1,5 @@
-import { AudioPlayerStatus, createAudioPlayer, createAudioResource, joinVoiceChannel } from '@discordjs/voice'
 import type { VoiceBasedChannel } from 'discord.js'
+import { AudioPlayerStatus, createAudioPlayer, createAudioResource, joinVoiceChannel } from '@discordjs/voice'
 
 import { getAssetPath, tap } from './misc'
 
